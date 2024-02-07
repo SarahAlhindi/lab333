@@ -7,12 +7,48 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/received_value_id"
+        android:layout_width="260dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="135dp"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send_button_id" />
+
+    <EditText
+        android:id="@+id/send_text_id"
+        android:layout_width="252dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="169dp"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/send_button_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/send_button_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="189dp"
+        android:layout_marginBottom="201dp"
+        android:text="send"
+        app:layout_constraintBottom_toTopOf="@+id/received_value_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send_text_id" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
